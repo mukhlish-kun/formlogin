@@ -1,0 +1,23 @@
+REST API CI4
+
+buatlah database dengan nama `formlogin`
+lalu import users.sql
+
+setelah itu jalankan lewat gitbash atau cmd dengan command 'PHP spark serve'
+
+sehingga rest server bisa digunakan.
+
+untuk register user baru dengan http://localhost:8080/register dengan method post.
+
+untuk login dengan http://localhost:8080/login dengan method post.
+
+untuk update dengan http://localhost:8080/users dengan method put.
+
+di rest server ini sudah menggunakan aut JWT sehingga ketika ingin melakukan update data user, si user harus memiliki token.
+
+cara mendapatkan token adalah dengan login.
+
+$routes->post('/register', 'Users::create');
+$routes->put('/users', 'Users::update');
+$routes->post('/login', 'Users::login');
+

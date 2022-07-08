@@ -1,0 +1,7 @@
+<IfModule mod_headers.c>
+    Header set Access-Control-Allow-Origin "*"
+</IfModule>
+
+<FilesMatch "\.(js)$">
+    Header set Access-Control-Allow-Origin "*"
+</FilesMatch>
